@@ -1,0 +1,86 @@
+/* VARIABLES */
+:root {
+    --primary-color: #1e3a8a;
+    --secondary-color: #f4f4f4;
+    --accent-color: #2563eb;
+    --font-main: Arial, sans-serif;
+}
+
+/* ELEMENT SELECTOR */
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+/* CLASS SELECTOR */
+.profile-pic {
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* ID SELECTOR */
+#about {
+    background-color: white;
+}
+
+/* HOVER PSEUDO CLASS */
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--primary-color);
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ANOTHER PSEUDO CLASS */
+nav a:hover {
+    color: yellow;
+}
+
+/* SECTION STYLING */
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 600px) {
+    body {
+        background-color: #e0f2fe;
+    }
+}
+
+@media (min-width: 950px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+.logo {
+	width: 80px;
+	display: block;
+	margin: 10px auto;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+article {
+	margin-top: 200px;
+}
